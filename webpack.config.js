@@ -25,8 +25,10 @@ module.exports = {
               },
           ],
       },
-        { test: /\.md$/,
+        { 
+          test: /\.md$/,
           use: [
-            'vue-loader', {loader: path.resolve(__dirname, './src/index.js'),}]}
+            'vue-loader', {loader: path.resolve(__dirname, './src/index.js'),}]
+          }
       ]}
 }

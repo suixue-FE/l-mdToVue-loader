@@ -30,7 +30,6 @@ const parser = new MarkdownIt({
 module.exports = function(source){
   let options = loaderUtils.getOptions(this) || {};
   this.cacheable && this.cacheable();
-  console.log(options.filename,'看看看');
   options = {
     wrapper,
     ...options
